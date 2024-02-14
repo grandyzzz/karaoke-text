@@ -26,8 +26,21 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+strong {
+  @apply text-yellow-400 font-bold;
+}
+h2 {
+  @apply max-w-[1122px] font-bold text-[78px];
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
+@media (max-width: 1200px) {
+  h2 {
+    @apply text-[46px];
+  }
+}
+
